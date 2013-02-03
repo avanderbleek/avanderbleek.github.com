@@ -1,9 +1,58 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <style>
+      @import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700);
+      h1 { font-family: 'Oleo Script Swash Caps', cursive; }
+
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      @media screen and (min-width: 500px) {
+        ul {
+        }
+
+        li {
+          width: 200px;
+          background: black;
+          color: white;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        h1 {
+          text-align: center;
+        }
+        ul {
+          padding: 0;
+        }
+
+        li {
+          border-top: 1px solid black;
+          text-align: center;
+          color: black;
+        }
+
+        .contact {
+          background-color: black;
+          text-align: center;
+          color: white;
+        }
+      }
+    </style>
   </head>
   <body>
     <h1>Austen Vanderbleek</h1>
-    <p>Creative</p>
+    <ul>
+      <li><a>Copy</a></li>
+      <li><a>Design</a></li>
+      <li><a>Music</a></li>
+    </ul>
+    <div class="contact">
+      Contact Me
+    </div>
   </body>
 </html>

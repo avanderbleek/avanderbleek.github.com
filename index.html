@@ -1,46 +1,59 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    <meta name="viewport" content="initial-scale=1.0">
     <style>
-      @import url(http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700);
-      h1 { font-family: 'Oleo Script Swash Caps', cursive; }
+      @import url(http://fonts.googleapis.com/css?family=Oleo+Script:700|Crete+Round);
 
-      html, body {
-        width: 100%;
-        margin: 0;
+      body { font-family: 'Crete Round', serif; }
+
+      body {
+        width: 70%;
+        max-width: 700px;
+        margin: 0 auto;
         padding: 0;
       }
+      ul { padding: 0; }
 
       @media screen and (min-width: 500px) {
-        ul {
-        }
-
         li {
-          width: 200px;
           background: black;
           color: white;
+          width: 80px;
+          height: 80px;
+          line-height: 80px;
+          text-align: center;
+          display: inline-block;
+          cursor: pointer;
         }
+        .contact .mobile { display: none; }
       }
 
       @media screen and (max-width: 500px) {
-        h1 {
-          text-align: center;
-        }
-        ul {
-          padding: 0;
+        body {
+          width: 100%;
         }
 
+        h1 {
+          margin: 0;
+          text-align: center;
+        }
+
+        ul { margin: 0; }
         li {
-          border-top: 1px solid black;
+          border-top: 2px solid black;
           text-align: center;
           color: black;
+          font-size: 1.5em;
         }
 
         .contact {
           background-color: black;
           text-align: center;
           color: white;
+          .mobile { display: inline; }
         }
+        .no-mobile { display: none; }
       }
     </style>
   </head>
@@ -52,7 +65,9 @@
       <li><a>Music</a></li>
     </ul>
     <div class="contact">
-      Contact Me
+      <span class="no-mobile">Contact Me</span>
+      <span class="mobile">Tel: 3212898928</span>
+      <span class="mobile">Email: austen.vanderbleek@gmail.com</span>
     </div>
   </body>
 </html>

@@ -26,7 +26,8 @@
           display: inline-block;
           cursor: pointer;
         }
-        .contact .mobile { display: none; }
+        .no-mobile { display: block; }
+        .mobile { display: none; }
       }
 
       @media screen and (max-width: 500px) {
@@ -49,10 +50,11 @@
 
         .contact {
           background-color: black;
-          text-align: center;
+          text-align: left;
+          padding-left: 10px;
           color: white;
-          .mobile { display: inline; }
         }
+        .mobile { display: block; }
         .no-mobile { display: none; }
       }
     </style>

@@ -5,29 +5,32 @@
     <style>
       @import url(http://fonts.googleapis.com/css?family=Oleo+Script:700|Crete+Round);
 
-      body { font-family: 'Crete Round', serif; }
-
       body {
         width: 70%;
-        max-width: 700px;
+        max-width: 17em;
         margin: 0 auto;
         padding: 0;
+        font-family: 'Crete Round', serif; 
+        font-size: 2em;
       }
+
       ul { padding: 0; }
+      a { color: inherit; text-decoration: none; }
 
       @media screen and (min-width: 500px) {
         li {
           background: black;
           color: white;
-          width: 80px;
-          height: 80px;
-          line-height: 80px;
+          width: 4em;
+          height: 4em;
+          line-height: 4em;
           text-align: center;
           display: inline-block;
           cursor: pointer;
         }
         .no-mobile { display: block; }
         .mobile { display: none; }
+        .contact { cursor: pointer; }
       }
 
       @media screen and (max-width: 500px) {
@@ -51,7 +54,6 @@
         .contact {
           background-color: black;
           text-align: left;
-          padding-left: 10px;
           color: white;
         }
         .mobile { display: block; }
@@ -62,9 +64,9 @@
   <body>
     <h1>Austen Vanderbleek</h1>
     <ul>
-      <li><a>Copy</a></li>
-      <li><a>Design</a></li>
-      <li><a>Music</a></li>
+      <li><a href="/copy">Copy</a></li>
+      <li><a href="/design">Design</a></li>
+      <li><a href="/music">Music</a></li>
     </ul>
     <div class="contact">
       <span class="no-mobile">Contact Me</span>
